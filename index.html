@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barber_Shop</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body>
@@ -37,6 +42,90 @@
         <img src="Barber_Shop_img/menu.png" id="menu">
     </div>
 
+<!--feature-->
+
+    <section id="feature">
+        <div class="title-text">
+            <p>FEATURES</p>
+            <h1>Why Choose Us</h1>
+        </div>
+        <div class="feature-box">
+
+        <div class="features">
+            <h1>Experienced Staff</h1>
+            <div class="features-desc">
+                <div class="features-icon">
+                    <i class="fa fa-shield" ></i>
+                </div>
+                <div class="features-text">
+                    <p>Donec eget ultricies sapi.sed porttitor,mauris ater lob
+                        facilisis,elit sapaie eleifed ligula.</p>
+                    </p> </div>
+            </div>
+
+            <h1>Pre Booking Online</h1>
+            <div class="features-desc">
+                <div class="features-icon">
+                    <i class="fa fa-check-square"></i>
+
+                </div>
+                <div class="features-text">
+                    <p>Donec eget ultricies sapi.sed porttitor,mauris ater lob
+                        facilisis,elit sapaie eleifed ligula.</p>
+                    </p> </div>
+            </div>
+
+            <h1>Affordable Cost</h1>
+            <div class="features-desc">
+                <div class="features-icon">
+                    <i class="fa fa-inr" ></i>
+                </div>
+                <div class="features-text">
+                    <p>Donec eget ultricies sapi.sed porttitor,mauris ater lob
+                        facilisis,elit sapaie eleifed ligula.</p>
+                    </p> </div>
+            </div>
+
+
+        </div>
+        <div class="features-img">
+            <img src="Barber_Shop_img/barber-man.jpg">
+        </div>
+    </div>
+    </section>
+
+    
+    <!--Service-->
+    <section id="service">
+        <div class="title-text">
+            <p>SERVICE</p>
+            <h1>We Provide Better</h1>
+        </div> 
+
+        <div class="service-box">
+            <div class="single-service">
+                <img src="Barber_Shop_img/pic-1.jpg">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="single-service">
+                <img src="Barber_Shop_img/pic-2.jpg">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="single-service">  
+                <img src="Barber_Shop_img/pic-3.jpg">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="single-service">
+                <img src="Barber_Shop_img/pic-4.jpg">
+                <div class="overlay"></div>
+            </div>
+            
+        </div>
+    </section>
+
     <script>
         var menuBtn=document.getElementById("menuBtn")
         var sideNav=document.getElementById("sideNav")
@@ -47,10 +136,12 @@
         menuBtn.onclick = function(){
             if(sideNav.style.right=="-250px"){
                 sideNav.style.right="0";
+                menu.src="Barber_Shop_img/close.png";
             }
 
             else{
                 sideNav.style.right="-250px";
+                menu.src="Barber_Shop_img/menu.png";
             }
 
         }
